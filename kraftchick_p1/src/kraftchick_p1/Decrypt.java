@@ -17,11 +17,6 @@ public class Decrypt {
 			tmpC = scan.next();
 			userNum[i] = Integer.parseInt((Character.isDigit(tmpC.charAt(0)) ? tmpC : "-1"));
 		}
-
-		for (int i = 0; i < 4; i++)
-		{
-			System.out.print(userNum[i]);
-		}
 		
 		// decyphers 0123 and 123 the same
 		for (int i = 0; i < 4; i++)
