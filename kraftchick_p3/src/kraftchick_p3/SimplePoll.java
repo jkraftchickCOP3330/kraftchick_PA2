@@ -48,7 +48,7 @@ public class SimplePoll {
 				while (userInput < 0 || userInput > 10)
 				{
 					System.out.println("Please enter a valid number (0 to quit, 1-10 to rank topic)");
-					System.out.print(topics[j]);
+					System.out.print(topics[j] + ": ");
 					userInput = scan.nextInt();
 				}
 				
@@ -102,12 +102,12 @@ public class SimplePoll {
 		//System.out.printf(questionLen + "  | " + numLen + " " + numLen + " " + numLen + " " + numLen + " " + numLen + " " + numLen + " " + numLen + " " + numLen + " " + numLen + " " + numLen + " | " + avgLen + "\n", "", "", "", "", "", "", "", "", "", "", "", "avg[0]");
 
 		if ((int)min[0] != -1)
-			System.out.printf("%nLowest Total : Question %d with a total of %d, %s%n", (int)min[0], (int)min[1], topics[(int)min[0]]);
+			System.out.printf("%nLowest Total : Question %d with a total of %d, %s%n", (int)min[0] + 1, (int)min[1], topics[(int)min[0]]);
 		else
 			System.out.printf("%nNo response was given, cant have a min value%n");
 		
 		if ((int)max[0] != -1)
-			System.out.printf("Highest Total: Question %d with a total of %d, %s", (int)max[0], (int)max[1], topics[(int)max[0]]);
+			System.out.printf("Highest Total: Question %d with a total of %d, %s", (int)max[0] + 1, (int)max[1], topics[(int)max[0]]);
 		else
 			System.out.printf("No response was given, cant have a max value");
 	}
