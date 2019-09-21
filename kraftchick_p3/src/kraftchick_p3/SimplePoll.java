@@ -102,12 +102,12 @@ public class SimplePoll {
 		//System.out.printf(questionLen + "  | " + numLen + " " + numLen + " " + numLen + " " + numLen + " " + numLen + " " + numLen + " " + numLen + " " + numLen + " " + numLen + " " + numLen + " | " + avgLen + "\n", "", "", "", "", "", "", "", "", "", "", "", "avg[0]");
 
 		if ((int)min[0] != -1)
-			System.out.printf("%nLowest Total : Question %d with a total of %2.2f, %s%n", (int)min[0], min[1], topics[(int)min[0]]);
+			System.out.printf("%nLowest Total : Question %d with a total of %d, %s%n", (int)min[0], (int)min[1], topics[(int)min[0]]);
 		else
 			System.out.printf("%nNo response was given, cant have a min value%n");
 		
 		if ((int)max[0] != -1)
-			System.out.printf("Highest Total: Question %d with a total of %2.2f, %s", (int)max[0], max[1], topics[(int)max[0]]);
+			System.out.printf("Highest Total: Question %d with a total of %d, %s", (int)max[0], (int)max[1], topics[(int)max[0]]);
 		else
 			System.out.printf("No response was given, cant have a max value");
 	}
